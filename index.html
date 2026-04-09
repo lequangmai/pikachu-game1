@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A Pikachu / Onet style matching game with a 6x6 grid.">
+    <title>Pikachu Match Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game-container">
+        <header>
+            <h1>Pikachu Match</h1>
+            <div class="stats">
+                <div class="stat-box">
+                    <span class="label">Score</span>
+                    <span id="score" class="value">0</span>
+                </div>
+                <div class="stat-box">
+                    <span class="label">Time</span>
+                    <span id="time" class="value">60</span>
+                </div>
+                <button id="reset-btn">Restart</button>
+            </div>
+        </header>
+
+        <main>
+            <div id="grid" class="grid"></div>
+        </main>
+    </div>
+
+    <!-- Modal for Game Over -->
+    <div id="game-over-modal" class="modal hidden">
+        <div class="modal-content">
+            <h2 id="modal-title">Game Over!</h2>
+            <p>Your Score: <span id="final-score">0</span></p>
+            <button id="play-again-btn">Play Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
